@@ -1,0 +1,458 @@
+/*-------------Foundations for the Scroll Snap page layout -----------------------*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start; /* marks the snapping point as the beginning of each section */
+
+}
+.wrapper{
+
+    scroll-snap-type: y mandatory;    /* enables scroll snapping*/
+    overflow-y: scroll;  /* creates a second scroll bar for the section that intercept the scrolling command of the original scrollbar*/
+    overflow-x: hidden; /* Hides the horizontal scrollbar for overflow elements*/
+    height: 100vh;
+}
+
+/*-------------Styling and Shoelace adjustments -----------------------*/
+
+:root {
+    /*Color Change on Shoelaces elements */
+    --sl-color-primary-50: var(--sl-color-cyan-50);
+    --sl-color-primary-100: var(--sl-color-cyan-100);
+    --sl-color-primary-200: var(--sl-color-cyan-200);
+    --sl-color-primary-300: var(--sl-color-cyan-300);
+    --sl-color-primary-400: var(--sl-color-cyan-400);
+    --sl-color-primary-500: var(--sl-color-cyan-500);
+    --sl-color-primary-600: var(--sl-color-cyan-600);
+    --sl-color-primary-700: var(--sl-color-cyan-700);
+    --sl-color-primary-800: var(--sl-color-cyan-800);
+    --sl-color-primary-900: var(--sl-color-cyan-900);
+    --sl-color-primary-950: var(--sl-color-cyan-950);
+
+    --sl-color-primary-saturation: 30%;
+}
+
+sl-switch::part(base){
+background: rgb(0, 0, 0);
+padding:2em;
+border-radius:1em;
+/*em means unit relative to current font size (how many times)*/
+}
+body {
+
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    overflow-y: hidden; /*hides the original scroll bar */
+
+
+}
+/*-------------Section 1: Landing Page -----------------------*/
+.muscontrol{
+    padding:30px;
+position:absolute;
+z-index:100;
+}
+.titleimg{
+    background-image: url("../images/History_of_MegaMan_Logo.gif");
+    pointer-events:none;     /* makes it so that the elements will not block cursor click */
+    position:absolute; 
+    z-index: 1;
+    height: 60vh;
+    width: 60vw;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: contain;
+
+}
+.gearbg{
+    pointer-events:none;     /* makes it so that the elements will not block cursor click */
+    position:absolute;     /* makes it so that the elements will float ontop in the section*/
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+
+}
+
+.vdobackdrop{
+
+    pointer-events:none;     /* makes it so that the elements will not block cursor click */
+    position:absolute;         /* makes it so that the elements will float ontop in the section*/
+    height: 130vh;
+    width: auto;
+    opacity:60%;
+
+}
+
+.landingtext{
+    display:table;
+
+    height:10px;
+}
+/*-------------Section 2: TimeLine -----------------------*/
+.timeline{ background-image:url("../images/TimelineBG.png");  
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: contain;}
+/*.timeline{
+    display:flex;
+    overflow-x:scroll;
+}*/
+/*Styling for Timeline item*/
+.card-overview {
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 400px;
+    
+  }
+  .card-overview::part(base) {
+    background: rgb(214, 247, 255);
+    border: groove 20px rgb(0, 200, 255);
+  }
+
+
+  .card-overview small {
+    color: var(--sl-color-neutral-500);
+  }
+
+  .card-overview [slot='footer'] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .musicbtn{float:right;}
+
+
+.TLImg{
+    display:table;
+    margin:auto;
+
+}
+
+/*---------CSS Horizontal Design Timeline referenced from Online web ustaad(2020), Youtube. https://youtu.be/oXLha6A4gjc-----------*/
+  .procress-wrapper{
+    margin: auto;
+    max-width:100px;
+  }
+
+  #progress-bar-container{
+
+        position:relative;
+        width:90%;
+        margin:auto;
+        height:100px;
+        margin-top: 59px;
+  }
+
+  #progress-bar-container ul{
+    padding: 0;
+    margin: 0;
+    padding-top: 5px;
+    z-index:100;
+    position:absolute;
+    width:100%;
+    margin-top: -40px;
+  }
+
+  #progress-bar-container li:before{
+        content:"";
+        display:block;
+        margin:auto;
+        width:30px;
+        height:30px;
+        border-radius:50%;
+        border: solid 2px #aaa;
+        transition: all ease 0.3s;
+  }
+
+  #progress-bar-container li.active:before,
+  #progress-bar-container li:hover:before{
+    background: deepskyblue;
+
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: contain;
+  }
+  #progress-bar-container li.step01.active:before{    background-image:url("../images/Timelinethumb1.png");}
+  #progress-bar-container li.step02.active:before{    background-image:url("../images/Timelinethumb2.png");}
+  #progress-bar-container li.step03.active:before{    background-image:url("../images/Timelinethumb3.png");}
+  #progress-bar-container li.step04.active:before{    background-image:url("../images/Timelinethumb4.png");}
+  #progress-bar-container li.step05.active:before{    background-image:url("../images/Timelinethumb5.png");}
+  #progress-bar-container li.step06.active:before{    background-image:url("../images/Timelinethumb6.png");}
+
+  #progress-bar-container li{
+    list-style: none;
+    float:left;
+    width:16%;
+    text-align:center;
+    color:#aaa;
+    text-transform:uppercase;
+    font-size:11px;
+    cursor:pointer;
+    font-weight: 700;
+    transition:all ease 0.2s;
+    vertical-align:bottom;
+    height:59px;
+    position:relative;
+
+  }
+  #progress-bar-container li.step-inner{
+
+    position: absolute;
+    width:100%;
+    bottom:0;
+    font-size:14px;
+
+  }
+
+  #progress-bar-container li.active,
+  #progress-bar-container li:hover{
+    color: deepskyblue;
+  }
+
+  #progress-bar-container li:after{
+    content:"";
+    display:block;
+    width:5px;
+    height:5px;
+    background:777;
+    margin:auto;
+    border:solid 7px white;
+    border-radius:50%;
+    margin-top: 40px;
+    box-shadow: 0 2px 13px -1px rgba(0,0,0,0.3);
+    transition: all ease 0.2;
+
+}
+
+#progress-bar-container li.active:after{
+  background: deepskyblue;
+}
+
+#progress-bar-container #line{
+    width: 80%;
+    margin:auto;
+    background: #eee;
+    height: 5px;
+    position: absolute;
+    left: 10%;
+    top:77px;
+    z-index:4;
+    border-radius:50px;
+    transition:all ease 0.9s;
+}
+
+#progress-bar-container #line-progress{
+    content:"";
+    width: 3%;
+    height: 100%;
+    background: deepskyblue;
+    background: linear-gradient(to right, deepskyblue 0%, #2ea3b7 100%);
+    position: absolute;
+    z-index: 8;
+    border-radius:50px;
+    transition:all ease 0.9s;
+}
+
+#progress-content-section{
+    width: 90%;
+    margin: auto;
+    background: #f3f3f3;
+    border-radius: 4px;
+
+}
+
+#progress-content-section .section-content{
+padding:30px 40px;
+text-align: center;
+}
+#progress-content-section .section-content h2 {
+	font-size:17px;
+	text-transform:uppercase;
+	color:#333;
+	letter-spacing:1px;
+    text-align:left;
+}
+
+#progress-content-section .section-content p {
+	font-size:16px;
+	line-height:1.8em;
+	color:#777;
+    text-align:left;
+}
+
+#progress-content-section .section-content {
+	display:none;
+	animation: FadeInUp 700ms ease 1;
+	animation-fill-mode:forwards;
+	transform:translateY(15px);
+	opacity:0;
+}
+
+#progress-content-section .section-content.active {
+	display:block;
+}
+li.step{ padding-bottom:100px;}
+li.step:nth-of-type(odd){
+background-color:rgba(0, 0, 0, 0.6);
+}
+li.step:nth-of-type(even){
+    background-color:rgba(0, 0, 0, 0.6);
+    }
+@keyframes FadeInUp {
+	0% {
+		transform:translateY(15px);
+		opacity:0;
+	}
+	
+	100% {
+		transform:translateY(0px);
+		opacity:1;
+	}
+}
+
+.innerflex{display:flex;}
+
+.Friendly{color:rgb(48, 41, 191);}
+span.Hostile{color:rgb(231, 72, 72);}
+/*-------------Section 3: Characters -----------------------*/
+.gallery {
+
+    display: flex;
+}
+
+.gallery a {
+
+    width: 25%;
+    margin: 0.2%;
+
+}
+
+.gallery a img {
+
+    width: 100%;
+    transform:rotate(45deg);
+    opacity: 0.8;
+    transition: all 0.2s ease;
+
+}
+
+.gallery a:hover img {
+    
+    opacity: 1;
+    transform: scale(1.1) rotate(45deg);
+    
+}
+
+.gallerytitle{ 
+    position:absolute;
+    height:80%;
+    font-size:5vw;}
+
+/* Base Color for each section */
+.s1BG{background-color: blue;}
+.s2BG{background-color: rgb(0, 0, 0);}
+.s3BG{background: rgb(0,175,196);
+    background: linear-gradient(0deg, rgba(0,175,196,1) 0%, rgba(9,53,133,1) 15%, rgba(0,0,0,1) 100%);}
+
+
+
+/* Animated Gear element */
+.cogBG.sizeMedium{fill:none;stroke:#ffffff;stroke-width:5;stroke-miterlimit:10; transform-origin: 50% 50%;     transform-box: fill-box;}
+.cogBG.sizeLarge{fill:#FFFFFF;                                                  transform-origin: 50% 50%;     transform-box: fill-box;}
+.cogBG.sizeSmall{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10; transform-origin: 50% 50%;     transform-box: fill-box;}
+
+.cogBG{ opacity:100%; }
+
+
+/*--Responsive---*/
+@media screen and (max-width: 768px) {
+
+/* - Section 2 -*/
+.innerflex{display:block;}
+#progress-content-section{
+    width: 90%;
+    margin: auto;
+    background: #f3f3f3;
+    border-radius: 4px;
+
+}
+
+#progress-content-section .section-content{
+    padding:10px 20px;
+    text-align: center;
+    }
+    #progress-content-section .section-content h2 {
+        font-size:17px;
+        text-transform:uppercase;
+        color:#333;
+        letter-spacing:1px;
+        text-align:left;
+    }
+    
+    #progress-content-section .section-content p {
+        font-size:10px;
+        line-height:1.8em;
+        color:#777;
+        text-align:left;
+    }
+    
+    #progress-content-section .section-content {
+        display:none;
+        animation: FadeInUp 700ms ease 1;
+        animation-fill-mode:forwards;
+        transform:translateY(15px);
+        opacity:0;
+    }
+    
+    #progress-content-section .section-content.active {
+        display:block;
+    }
+
+/* - Section 3 -*/
+.gallery {
+
+    display: block;
+}
+
+.gallery a {
+
+    width: 25%;
+    margin: 0.2%;
+
+}
+
+.gallery a img {
+
+    width: 30%;
+    transform:rotate(45deg);
+    opacity: 0.8;
+    transition: all 0.2s ease;
+
+}
+
+.gallery a:hover img {
+    
+    opacity: 1;
+    transform: scale(1.1) rotate(45deg);
+    
+}
+
+.gallerytitle{ 
+    position:absolute;
+    height:80%;
+    font-size:5vw;}
+    
+    
+}

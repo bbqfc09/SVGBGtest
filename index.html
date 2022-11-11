@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The Legacy of MegaMan</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <!-- Linking the Shoelace library, Instructions: https://shoelace.style/getting-started/usage -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.83/dist/themes/light.css" />
+
+   <!-- Linking the animate.css library, Instructions: https://animate.style/#usage -->
+    <link  rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Linking the local stylesheet -->
+    <link rel="stylesheet" href="css/style.css"> 
+
+    <!-- Lato Font from Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+   <!-- Icon for the Website-->
+   <link rel="icon" href="icon.png"> 
+
+</head>
+<body>
+
+
+
+<div class="wrapper">
+
+  <div class="muscontrol">
+    <sl-button variant="default" size="large" circle>
+      <sl-icon name="volume-mute" label="Settings"></sl-icon>
+    </sl-button>
+      <!-- Music: 8 Bit Smooth Presentation by David Fesliyan https://www.fesliyanstudios.com/royalty-free-music/downloads-c/8-bit-music/-->
+    <!--controls autoplay loop-->
+  <audio>
+  <source src="music/ambient.mp3" type="audio/mp3">
+  </audio>
+  </div>
+<!--------------- Section 1: Landing Page--------------->
+   <section class="s1BG">
+
+
+
+    
+    <!-- Title Logo-->
+    <div class="titleimg animate__animated animate__backInDown"> </div>
+
+   <!-- Background SVG Gear Element-->
+                <div class="gearbg">
+                  <svg viewBox="0 0 1440 1024">
+               <!--Left Side Cog-->
+                  <path class="cogBG sizeLarge rAC" d="M94.57,327.57c0-4.15-0.36-8.2-1.02-12.16l14.09-12.72c-1.89-6.59-4.5-12.88-7.76-18.75l-18.97,0.97
+                    c-4.74-6.64-10.55-12.45-17.19-17.19l0.97-18.97c-5.88-3.26-12.16-5.87-18.75-7.76l-12.72,14.09c-3.96-0.66-8.02-1.02-12.16-1.02
+                    s-8.2,0.36-12.16,1.02l-12.72-14.09c-6.59,1.89-12.88,4.5-18.75,7.76l0.97,18.97c-6.64,4.74-12.45,10.55-17.19,17.19l-18.97-0.97
+                    c-3.26,5.88-5.87,12.16-7.76,18.75l14.09,12.72c-0.66,3.96-1.02,8.02-1.02,12.16c0,4.15,0.36,8.2,1.02,12.16l-14.09,12.72
+                    c1.89,6.59,4.5,12.88,7.76,18.75l18.97-0.97c4.74,6.64,10.55,12.45,17.19,17.19l-0.97,18.97c5.88,3.26,12.16,5.87,18.75,7.76
+                    l12.72-14.09c3.96,0.66,8.02,1.02,12.16,1.02s8.2-0.36,12.16-1.02l12.72,14.09c6.59-1.89,12.88-4.5,18.75-7.76l-0.97-18.97
+                    c6.64-4.74,12.45-10.55,17.19-17.19l18.97,0.97c3.26-5.88,5.87-12.16,7.76-18.75l-14.09-12.72
+                    C94.21,335.77,94.57,331.72,94.57,327.57z M21.05,377.24c-27.43,0-49.67-22.24-49.67-49.67c0-27.43,22.24-49.67,49.67-49.67
+                    s49.67,22.24,49.67,49.67C70.72,355,48.48,377.24,21.05,377.24z"/>
+                  <path class="cogBG sizeLarge AC" d="M195.09,474.84c0-4.15-0.36-8.2-1.02-12.16l14.09-12.72c-1.89-6.59-4.5-12.88-7.76-18.75l-18.97,0.97
+                    c-4.74-6.64-10.55-12.45-17.19-17.19l0.97-18.97c-5.88-3.26-12.16-5.87-18.75-7.76l-12.72,14.09c-3.96-0.66-8.02-1.02-12.16-1.02
+                    c-4.15,0-8.2,0.36-12.16,1.02l-12.72-14.09c-6.59,1.89-12.88,4.5-18.75,7.76l0.97,18.97c-6.64,4.74-12.45,10.55-17.19,17.19
+                    l-18.97-0.97c-3.26,5.88-5.87,12.16-7.76,18.75l14.09,12.72c-0.66,3.96-1.02,8.02-1.02,12.16s0.36,8.2,1.02,12.16l-14.09,12.72
+                    c1.89,6.59,4.5,12.88,7.76,18.75l18.97-0.97c4.74,6.64,10.55,12.45,17.19,17.19l-0.97,18.97c5.88,3.26,12.16,5.87,18.75,7.76
+                    l12.72-14.09c3.96,0.66,8.02,1.02,12.16,1.02c4.15,0,8.2-0.36,12.16-1.02l12.72,14.09c6.59-1.89,12.88-4.5,18.75-7.76l-0.97-18.97
+                    c6.64-4.74,12.45-10.55,17.19-17.19l18.97,0.97c3.26-5.88,5.87-12.16,7.76-18.75L194.07,487
+                    C194.73,483.04,195.09,478.99,195.09,474.84z M121.57,524.51c-27.43,0-49.67-22.24-49.67-49.67s22.24-49.67,49.67-49.67
+                    s49.67,22.24,49.67,49.67S149,524.51,121.57,524.51z"/>
+                  <path class="cogBG sizeLarge rAC" d="M127.31,695.83c0-8.2-0.71-16.23-2.02-24.06l27.87-25.17c-3.74-13.04-8.91-25.47-15.36-37.1l-37.54,1.92
+                    c-9.38-13.13-20.88-24.63-34.01-34.01l1.92-37.54c-11.63-6.45-24.06-11.62-37.1-15.36L5.91,552.38c-7.83-1.3-15.86-2.02-24.06-2.02
+                    s-16.23,0.71-24.06,2.02l-25.17-27.87c-13.04,3.74-25.47,8.91-37.1,15.36l1.92,37.54c-13.13,9.38-24.63,20.88-34.01,34.01
+                    l-37.54-1.92c-6.45,11.63-11.62,24.06-15.36,37.1l27.87,25.17c-1.3,7.83-2.02,15.86-2.02,24.06c0,8.2,0.71,16.23,2.02,24.06
+                    l-27.87,25.17c3.74,13.04,8.91,25.47,15.36,37.1l37.54-1.92c9.38,13.13,20.88,24.63,34.01,34.01l-1.92,37.54
+                    c11.63,6.45,24.06,11.62,37.1,15.36l25.17-27.88c7.83,1.3,15.86,2.02,24.06,2.02s16.23-0.71,24.06-2.02l25.17,27.88
+                    c13.04-3.74,25.47-8.91,37.1-15.36l-1.92-37.54c13.13-9.38,24.63-20.88,34.01-34.01l37.54,1.92c6.45-11.63,11.62-24.06,15.36-37.1
+                    l-27.87-25.17C126.6,712.06,127.31,704.03,127.31,695.83z M-18.15,794.09c-54.27,0-98.26-43.99-98.26-98.26
+                    c0-54.27,43.99-98.26,98.26-98.26s98.26,43.99,98.26,98.26C80.11,750.1,36.12,794.09-18.15,794.09z"/>
+                  <path class="cogBG sizeSmall AC" d="M61.81,923.11c0-2.3-0.2-4.55-0.57-6.74l7.81-7.05c-1.05-3.65-2.5-7.14-4.3-10.4l-10.52,0.54
+                    c-2.63-3.68-5.85-6.9-9.53-9.53l0.54-10.52c-3.26-1.81-6.74-3.26-10.4-4.3l-7.05,7.81c-2.19-0.37-4.44-0.57-6.74-0.57
+                    s-4.55,0.2-6.74,0.57l-7.05-7.81c-3.65,1.05-7.14,2.5-10.4,4.3l0.54,10.52c-3.68,2.63-6.9,5.85-9.53,9.53l-10.52-0.54
+                    c-1.81,3.26-3.26,6.74-4.3,10.4l7.81,7.05c-0.37,2.19-0.57,4.45-0.57,6.74s0.2,4.55,0.57,6.74l-7.81,7.05
+                    c1.05,3.65,2.5,7.14,4.3,10.4l10.52-0.54c2.63,3.68,5.85,6.9,9.53,9.53l-0.54,10.52c3.26,1.81,6.74,3.26,10.4,4.3l7.05-7.81
+                    c2.19,0.37,4.44,0.57,6.74,0.57s4.55-0.2,6.74-0.57l7.05,7.81c3.65-1.05,7.14-2.5,10.4-4.3L44.7,956.3c3.68-2.63,6.9-5.85,9.53-9.53
+                    l10.52,0.54c1.81-3.26,3.26-6.74,4.3-10.4l-7.81-7.05C61.61,927.66,61.81,925.41,61.81,923.11z M21.05,950.65
+                    c-15.21,0-27.53-12.33-27.53-27.53s12.33-27.54,27.53-27.54s27.53,12.33,27.53,27.54S36.26,950.65,21.05,950.65z"/>
+               <!--Right Side Cog-->
+                  <path class="cogBG sizeLarge AC" d="M1355.5,860.63c0,3.85,0.33,7.61,0.95,11.28l-13.07,11.8c1.75,6.11,4.18,11.94,7.2,17.4l17.6-0.9
+                    c4.4,6.16,9.79,11.55,15.95,15.95l-0.9,17.6c5.45,3.03,11.28,5.45,17.4,7.2l11.8-13.07c3.67,0.61,7.44,0.95,11.28,0.95
+                    s7.61-0.33,11.28-0.95l11.8,13.07c6.11-1.75,11.94-4.18,17.4-7.2l-0.9-17.6c6.16-4.4,11.55-9.79,15.95-15.95l17.6,0.9
+                    c3.03-5.45,5.45-11.28,7.2-17.4l-13.07-11.8c0.61-3.67,0.95-7.44,0.95-11.28c0-3.85-0.33-7.61-0.95-11.28l13.07-11.8
+                    c-1.75-6.11-4.18-11.94-7.2-17.4l-17.6,0.9c-4.4-6.16-9.79-11.55-15.95-15.95l0.9-17.6c-5.45-3.03-11.28-5.45-17.4-7.2l-11.8,13.07
+                    c-3.67-0.61-7.44-0.95-11.28-0.95s-7.61,0.33-11.28,0.95l-11.8-13.07c-6.11,1.75-11.94,4.18-17.4,7.2l0.9,17.6
+                    c-6.16,4.4-11.55,9.79-15.95,15.95l-17.6-0.9c-3.03,5.45-5.45,11.28-7.2,17.4l13.07,11.8
+                    C1355.83,853.02,1355.5,856.78,1355.5,860.63z M1423.7,814.55c25.45,0,46.08,20.63,46.08,46.08c0,25.45-20.63,46.08-46.08,46.08
+                    c-25.45,0-46.08-20.63-46.08-46.08C1377.63,835.18,1398.26,814.55,1423.7,814.55z"/>
+                  <path class="cogBG sizeLarge rAC" d="M1250.64,715.64c0,3.85,0.33,7.61,0.95,11.28l-13.07,11.8c1.75,6.11,4.18,11.94,7.2,17.4l17.6-0.9
+                    c4.4,6.16,9.79,11.55,15.95,15.95l-0.9,17.6c5.45,3.03,11.28,5.45,17.4,7.2l11.8-13.07c3.67,0.61,7.44,0.95,11.28,0.95
+                    s7.61-0.33,11.28-0.95l11.8,13.07c6.11-1.75,11.94-4.18,17.4-7.2l-0.9-17.6c6.16-4.4,11.55-9.79,15.95-15.95l17.6,0.9
+                    c3.03-5.45,5.45-11.28,7.2-17.4l-13.07-11.8c0.61-3.67,0.95-7.44,0.95-11.28s-0.33-7.61-0.95-11.28l13.07-11.8
+                    c-1.75-6.11-4.18-11.94-7.2-17.4l-17.6,0.9c-4.4-6.16-9.79-11.55-15.95-15.95l0.9-17.6c-5.45-3.03-11.28-5.45-17.4-7.2l-11.8,13.07
+                    c-3.67-0.61-7.44-0.95-11.28-0.95s-7.61,0.33-11.28,0.95l-11.8-13.07c-6.11,1.75-11.94,4.18-17.4,7.2l0.9,17.6
+                    c-6.16,4.4-11.55,9.79-15.95,15.95l-17.6-0.9c-3.03,5.45-5.45,11.28-7.2,17.4l13.07,11.8
+                    C1250.97,708.03,1250.64,711.8,1250.64,715.64z M1318.85,669.57c25.45,0,46.08,20.63,46.08,46.08c0,25.45-20.63,46.08-46.08,46.08
+                    c-25.45,0-46.08-20.63-46.08-46.08C1272.77,690.2,1293.4,669.57,1318.85,669.57z"/>
+                  <path class="cogBG sizeLarge AC" d="M1313.52,510.63c0,7.61,0.66,15.06,1.87,22.32l-25.86,23.35c3.47,12.1,8.26,23.63,14.25,34.42l34.82-1.78
+                    c8.7,12.18,19.37,22.85,31.55,31.55l-1.78,34.82c10.79,5.99,22.32,10.78,34.42,14.25l23.35-25.86c7.27,1.21,14.72,1.87,22.32,1.87
+                    s15.06-0.66,22.32-1.87l23.35,25.86c12.1-3.47,23.63-8.26,34.42-14.25l-1.78-34.82c12.18-8.7,22.85-19.37,31.55-31.55l34.82,1.78
+                    c5.99-10.79,10.78-22.32,14.25-34.42l-25.86-23.35c1.21-7.27,1.87-14.72,1.87-22.32c0-7.61-0.66-15.06-1.87-22.32l25.86-23.35
+                    c-3.47-12.1-8.26-23.63-14.25-34.42l-34.82,1.78c-8.7-12.18-19.37-22.85-31.55-31.55l1.78-34.82
+                    c-10.79-5.99-22.32-10.78-34.42-14.25l-23.35,25.86c-7.26-1.21-14.72-1.87-22.32-1.87s-15.06,0.66-22.32,1.87l-23.35-25.86
+                    c-12.1,3.47-23.63,8.26-34.42,14.25l1.78,34.82c-12.18,8.7-22.85,19.37-31.55,31.55l-34.82-1.78
+                    c-5.99,10.79-10.78,22.32-14.25,34.42l25.86,23.35C1314.18,495.57,1313.52,503.02,1313.52,510.63z M1448.47,419.47
+                    c50.35,0,91.16,40.81,91.16,91.16s-40.81,91.16-91.16,91.16s-91.16-40.81-91.16-91.16S1398.12,419.47,1448.47,419.47z"/>
+                  <path class="cogBG sizeSmall rAC" d="M1402.93,318.77c0,2.13,0.19,4.22,0.52,6.26l-7.25,6.54c0.97,3.39,2.32,6.62,3.99,9.65l9.76-0.5
+                    c2.44,3.41,5.43,6.4,8.84,8.84l-0.5,9.76c3.02,1.68,6.26,3.02,9.65,3.99l6.54-7.25c2.04,0.34,4.12,0.52,6.26,0.52
+                    s4.22-0.19,6.26-0.52l6.54,7.25c3.39-0.97,6.62-2.32,9.65-3.99l-0.5-9.76c3.41-2.44,6.4-5.43,8.84-8.84l9.76,0.5
+                    c1.68-3.02,3.02-6.26,3.99-9.65l-7.25-6.54c0.34-2.04,0.52-4.12,0.52-6.26s-0.19-4.22-0.52-6.26l7.25-6.54
+                    c-0.97-3.39-2.32-6.62-3.99-9.65l-9.76,0.5c-2.44-3.41-5.43-6.4-8.84-8.84l0.5-9.76c-3.02-1.68-6.26-3.02-9.65-3.99l-6.54,7.25
+                    c-2.04-0.34-4.12-0.52-6.26-0.52s-4.22,0.19-6.26,0.52l-6.54-7.25c-3.39,0.97-6.62,2.32-9.65,3.99l0.5,9.76
+                    c-3.41,2.44-6.4,5.43-8.84,8.84l-9.76-0.5c-1.68,3.02-3.02,6.26-3.99,9.65l7.25,6.54C1403.12,314.55,1402.93,316.64,1402.93,318.77z
+                     M1440.75,293.22c14.11,0,25.54,11.44,25.54,25.54c0,14.11-11.44,25.54-25.54,25.54s-25.54-11.44-25.54-25.54
+                    C1415.2,304.66,1426.64,293.22,1440.75,293.22z"/>
+                  </svg>
+               </div>
+   <!-- Hero Video Backdrop -->
+                                             <!-- Tags to make the video autoplays on loop -->
+         <video width="1920" height="1080" controls loop autoplay muted plays-inline class="vdobackdrop" alt="Video of Mega Man Gameplay">
+            <source src="videos/BGVideo.mp4" type="video/mp4">
+            <img src="images/vdobgthumbnail.png">
+          </video> 
+
+   </section>
+<!--------------- Section 2: Timeline--------------->
+   <section class="s2BG">
+
+      <div class="timeline">
+        <!-- Image thumbnail for each game-->
+      <sl-animation class="scrollanim1" name="backInDown" duration="800" iterations="1">
+        <img class="TLImg" src="images/RM1.jpg" width="30%" alt="Italian Trulli">
+      </sl-animation>
+
+      <!-- Timeline Created through Radio Button-->
+          <div class="process-wrapper">
+            <sl-animation class="scrollanim2" name="backInLeft" duration="800" iterations="1">
+            <div id="progress-bar-container">
+              <ul>
+                <li class="step step01 active">
+                  <div class="step-inner">MM1</div>
+                  <sl-badge variant="warning" pulse>1987</sl-badge>
+                </li>
+
+                <li class="step step02">
+                  <div class="step-inner">MM2</div>
+                  <sl-badge variant="primary">1988</sl-badge>
+                </li>
+
+                <li class="step step03">
+                  <div class="step-inner">MM3</div>
+                  <sl-badge variant="primary">1990</sl-badge>
+                </li>
+
+                
+                <li class="step step04">
+                  <div class="step-inner">MM4</div>
+                  <sl-badge variant="primary">1991</sl-badge>
+                </li>
+
+                <li class="step step05">
+                  <div class="step-inner">MM5</div>
+                  <sl-badge variant="primary">1992</sl-badge>
+                </li>
+
+                
+                <li class="step step06">
+                  <div class="step-inner">MM6</div>
+                  <sl-badge variant="primary">1993</sl-badge>
+                </li>
+
+              </ul>
+              <div id="line">
+                <div id="line-progress"></div>
+              </div>
+            </div>
+            </sl-animation>
+
+            <sl-animation class="scrollanim3" name="backInRight" duration="800" iterations="1">
+            <div id="progress-content-section">
+              <!-- Mega Man 1 Textbox  -->
+              <div class="section-content TL1 active">
+                <div class="innerflex">
+                <sl-avatar 
+                style="--size: 8rem; padding:20px;"
+                shape="rounded"
+                image="images/DrLightPort.gif"
+                label="Avatar of a gray tabby kitten looking down"
+                ></sl-avatar>
+                <div>
+                  <h2> Dr. Light: </h2>
+                  <P>
+                    The story begins in the year of 20XX where we live in peace and harmony with the Robots I have created.
+                    However situation has gone dire when my old time rival, 
+                    <sl-tooltip content="Villain of the Mega Man Series"><span class="Hostile">Dr. Wily</span></sl-tooltip>
+                    , modified 6 friendly robots masters, turning them hostile and causing a ruckus. Thankfully with the help of my trusty 
+                    robot helper,<sl-tooltip content="Protagonist of the Mega Man Series"><span class="Friendly">Mega Man</span></sl-tooltip> we were able to stop <sl-tooltip content="Villain of the Mega Man Series"><span class="Hostile">Dr. Wily</span></sl-tooltip> before it was too late.
+                  </P>
+                </div>
+                </div>
+              </div>
+              <!-- Mega Man 2 Textbox  -->
+              <div class="section-content TL2">
+                <div class="innerflex">
+                <sl-avatar 
+                style="--size: 8rem; padding:20px;"
+                shape="rounded"
+                image="images/DrLightPort.gif"
+                label="Avatar of a gray tabby kitten looking down"
+                ></sl-avatar>
+                <div>
+                  <h2> Dr. Light: </h2>
+                  <P>
+                    <sl-tooltip content="Villain of the Mega Man Series"><span class="Hostile">Dr. Wily</span></sl-tooltip> returns for revenge after his initial defeat with 8 newly created Robot
+                     masters and an army of robots by his side. It's up to <span class="Friendly">Mega Man</span> again to put an end to <sl-tooltip content="Villain of the Mega Man Series"><span class="Hostile">Dr. Wily</span></sl-tooltip>'s plan.
+                  </P>
+                </div>
+                </div>
+              </div>
+           <!-- Mega Man 3 Textbox  -->
+            <div class="section-content TL3">
+              <div class="innerflex">
+                <sl-avatar 
+                style="--size: 8rem; padding:20px;"
+                shape="rounded"
+                image="images/DrLightPort.gif"
+                label="Avatar of a gray tabby kitten looking down"
+                ></sl-avatar>
+                <div>
+              <h2>  Dr. Light: </h2>
+              <P>
+                Few months after the events of Mega Man 2, <sl-tooltip content="Villain of the Mega Man Series"><span class="Hostile">Dr. Wily</span></sl-tooltip> seemed to have finally see the error in
+                his ways and volunteered to aid me in the construction of the robot Gamma for peacekeeping,
+                However <sl-tooltip content="Villain of the Mega Man Series"><span class="Hostile">Dr. Wily</span></sl-tooltip> would soon reveal his true colors yet again when he got hold of the energy crystal powering Gamma.
+                It was up to <sl-tooltip content="Protagonist of the Mega Man Series"><span class="Friendly">Mega Man</span></sl-tooltip>  and the newly created companion <sl-tooltip content="Supporting Character of the Mega Man Series"><span class="Friendly">Rush</span></sl-tooltip>  to combat the 8 berserk robot masters and the mysterious <sl-tooltip content="Proto Man in Disguise,Brother and Rival of Mega Man"><span class="Hostile">Break Man</span></sl-tooltip>  to save the world again.
+              </P>
+            </div>
+          </div>
+          </div>
+
+           <!-- Mega Man 4 Textbox  -->
+           <div class="section-content TL4">
+            <div class="innerflex">
+              <sl-avatar 
+              style="--size: 8rem; padding:20px;"
+              shape="rounded"
+              image="images/DrLightPort.gif"
+              label="Avatar of a gray tabby kitten looking down"
+              ></sl-avatar>
+              <div>
+            <h2>  Dr. Light: </h2>
+            <P>
+              One year after the events of Mega Man 3, A mysterious scientist <sl-tooltip content="Villain of the Mega Man Series"><span class="Hostile">Dr. Cossack</span></sl-tooltip> has followed Wily's footsteps and 
+              cause mayham with 8 robot masters he created. With the help of <sl-tooltip content="Protagonist of the Mega Man Series"><span class="Friendly">Mega Man</span></sl-tooltip> and <sl-tooltip content="Supporting Character of the Mega Man Series"><span class="Friendly">Proto Man</span></sl-tooltip>
+              Cossack's robot army was defeated and ultimately revealing Dr. Wily was responsible for the attack, where he kidnapped Dr. Cossack's daughter, threatening him to 
+              begin assault on the world.
+            </P>
+          </div>
+        </div>
+        </div>
+
+           <!-- Mega Man 5 Textbox  -->
+           <div class="section-content TL5">
+            <div class="innerflex">
+              <sl-avatar 
+              style="--size: 8rem; padding:20px;"
+              shape="rounded"
+              image="images/DrLightPort.gif"
+              label="Avatar of a gray tabby kitten looking down"
+              ></sl-avatar>
+              <div>
+            <h2>  Dr. Light: </h2>
+            <P>
+              Two months after the events of Mega Man 4, I was suddenly kidnapped by <sl-tooltip content="Supporting Character of the Mega Man Series"><span class="Hostile">Proto Man</span></sl-tooltip> 
+              , as he constructed a robot army and threatened to take over the world.<sl-tooltip content="Protagonist of the Mega Man Series"><span class="Friendly">Mega Man</span></sl-tooltip> swiftly defeated the 8 Robot Masters and revealed the Proto Man that was causing havoc was actually an imposter
+              created by <sl-tooltip content="Villain of the Mega Man Series"><span class="Hostile"> Dr. Wily.</span></sl-tooltip> In an effort to frame the real <sl-tooltip content="Supporting Character of the Mega Man Series"><span class="Friendly">Proto Man</span></sl-tooltip>. Just as <sl-tooltip content="Protagonist of the Mega Man Series"><span class="Friendly">Mega Man</span></sl-tooltip> was about to be defeated by the imposter,<sl-tooltip content="Supporting Character of the Mega Man Series"><span class="Friendly">Proto Man</span></sl-tooltip> came to rescue
+              and together they have saved me and brought an end to Wily's plan once more.
+              </P>
+          </div>
+        </div>
+        </div>
+
+           <!-- Mega Man 6 Textbox  -->
+           <div class="section-content TL6">
+            <div class="innerflex">
+              <sl-avatar 
+              style="--size: 8rem; padding:20px;"
+              shape="rounded"
+              image="images/DrLightPort.gif"
+              label="Avatar of a gray tabby kitten looking down"
+              ></sl-avatar>
+              <div>
+            <h2>  Dr. Light: </h2>
+            <P>
+              To Counter <sl-tooltip content="Villain of the Mega Man Series"><span class="Hostile"> Dr. Wily</span></sl-tooltip>'s continuous schemes on taking over the world, the Global Robot Alliance was formed.
+              However, a new threat emerges as the host of the Robot Tournament, Mr.X, reprogrammed 8 of the robot participant in the Tournament and threatens the world yet again. Unsuprisingly, Mr.X was revealed to be none other than <sl-tooltip content="Villain of the Mega Man Series"><span class="Hostile"> Dr. Wily</span></sl-tooltip> himself.
+            
+            </P>
+          </div>
+        </div>
+        </div>
+
+            </div>
+            </sl-animation>
+
+
+          </div>
+   
+   
+      </div>
+
+   </section>
+<!--------------- Section 3: Gallery--------------->
+   <section class="s3BG">
+    <h1 class="gallerytitle">GALLERY</h1>
+
+
+  <div class="gallery">
+
+    <a data-fslightbox="gallery" href="images/galleryimg1.png">
+      <sl-tooltip content="Mega Man"> <img src="images/gallerythumb1.png"> </sl-tooltip>
+    </a>
+    <a data-fslightbox="gallery" href="images/galleryimg2.png">
+      <sl-tooltip content="Proto Man"><img src="images/gallerythumb2.png"> </sl-tooltip>
+    </a>
+    <a data-fslightbox="gallery" href="images/galleryimg3.png">
+      <sl-tooltip content="Dr. Light"><img src="images/gallerythumb3.png"> </sl-tooltip>
+    </a>
+    <a data-fslightbox="gallery" href="images/galleryimg4.png">
+      <sl-tooltip content="Roll"><img src="images/gallerythumb4.png"> </sl-tooltip>
+    </a>
+    <a data-fslightbox="gallery" href="images/galleryimg5.png">
+      <sl-tooltip content="Dr. Wily"><img src="images/gallerythumb5.png"> </sl-tooltip>
+    </a>
+
+  </div>
+    
+    
+    
+    
+    
+
+  </section>
+
+
+</div>
+
+
+
+
+
+   <!----------------------------------------------- Javascript zone --------------------------------------->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+         <!--  Linking GSAP & ScrollTrigger, Instructions: https://greensock.com/docs/v3 -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+
+         <!--  Linking shoelace Library-->
+         <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.83/dist/shoelace.js"></script>
+
+          <!-- Linking Anime.js, Instructions: https://animejs.com/documentation/ -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.js" integrity="sha512-E378bwaeZf1nwXeJGIwTB58A5gPt5jFU3u6aTGja4ZdRFJeo/N/REKnBgNZOZlH6JdnOPO98vg2AnSGaNfCMFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+       
+         <!-- Linking fslightbox, iNSTRUCTIONS: https://fslightbox.com/javascript/documentation -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.0.9/index.js" integrity="sha512-2VqLVM3WCyaqUgQb2hpoWHSus021RIN0Jq0wfrLqqLh+anm1kW/H4Yw7HVu3D5W4nbdUQmAA2mqQv2JEoy+kPA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
+        <!-- Linking Local javascript-->
+         <script src="js/main.js"></script>  
+         
+
+</body>
+</html>

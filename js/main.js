@@ -119,7 +119,7 @@ $(".step06").click( function() {
       scroller: ".wrapper",
       trigger: "#s3BG",
 
-      markers:true,
+     // markers:true,
 
     },
     y:0,
@@ -134,7 +134,7 @@ $(".step06").click( function() {
       scroller: ".wrapper",
       trigger: "#s3BG",
 
-      markers:true,
+     // markers:true,
 
     },
     y:100,

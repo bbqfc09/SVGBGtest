@@ -1,5 +1,4 @@
 /*-------------Foundations for the Scroll Snap page layout -----------------------*/
-
 *{
     padding: 0;
     margin: 0;
@@ -105,34 +104,14 @@ z-index:100;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: contain;}
-/*.timeline{
-    display:flex;
-    overflow-x:scroll;
-}*/
-/*Styling for Timeline item*/
-.card-overview {
-    padding-left: 10px;
-    padding-right: 10px;
-    max-width: 400px;
-    
-  }
-  .card-overview::part(base) {
-    background: rgb(214, 247, 255);
-    border: groove 20px rgb(0, 200, 255);
-  }
+
+.bgchara{
+    display:table;
+    width:100%;
+    position:absolute;
 
 
-  .card-overview small {
-    color: var(--sl-color-neutral-500);
-  }
-
-  .card-overview [slot='footer'] {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .musicbtn{float:right;}
-
+}
 
 .TLImg{
     display:table;
@@ -303,7 +282,10 @@ text-align: center;
 #progress-content-section .section-content.active {
 	display:block;
 }
-li.step{ padding-bottom:100px;}
+li.step{ background-image:url("../images/TimelineBG.png");  
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: contain;}
 li.step:nth-of-type(odd){
 background-color:rgba(0, 0, 0, 0.6);
 }
@@ -330,6 +312,8 @@ span.Hostile{color:rgb(231, 72, 72);}
 .gallery {
 
     display: flex;
+    align-items:center;
+
 }
 
 .gallery a {
@@ -338,11 +322,15 @@ span.Hostile{color:rgb(231, 72, 72);}
     margin: 0.2%;
 
 }
+.lightboximg{
+    opacity:0;
+    transform: translate(0,-1500px) scale(0);
 
+}
 .gallery a img {
 
     width: 100%;
-    transform:rotate(45deg);
+    transform:scale(0.8) rotate(45deg);
     opacity: 0.8;
     transition: all 0.2s ease;
 
@@ -356,15 +344,65 @@ span.Hostile{color:rgb(231, 72, 72);}
 }
 
 .gallerytitle{ 
-    position:absolute;
-    height:80%;
+
+    height:30%;
     font-size:5vw;}
 
+    .innerflex2{display:flex;}
+
+    #s3chatbox{
+        transform: translate(0%,80%);
+        display:table;
+        width: 90%;
+        margin: auto;
+        background: #f3f3f3;
+        border-radius: 4px;
+    
+    }
+    
+    #s3chatbox .s3content{
+    padding:30px 40px;
+    text-align: center;
+    }
+    #s3chatbox .s3content h2 {
+        font-size:17px;
+        text-transform:uppercase;
+        color:#333;
+        letter-spacing:1px;
+        text-align:left;
+    }
+    
+    #s3chatbox .s3content p {
+        font-size:16px;
+        line-height:1.8em;
+        color:#777;
+        text-align:left;
+    }
+    
+    #s3chatbox .s3content {
+        display:block;
+        animation: FadeInUp 700ms ease 1;
+        animation-fill-mode:forwards;
+        transform:translateY(15px);
+        opacity:0;
+    }
+    
+
 /* Base Color for each section */
-.s1BG{background-color: blue;}
-.s2BG{background-color: rgb(0, 0, 0);}
-.s3BG{background: rgb(0,175,196);
-    background: linear-gradient(0deg, rgba(0,175,196,1) 0%, rgba(9,53,133,1) 15%, rgba(0,0,0,1) 100%);}
+#s1BG{background-color: blue;}
+#s2BG{background-color: rgb(0, 0, 0);}
+#s3BG{
+    background: rgb(0, 0, 0);
+    background-image: url("../images/galleryBG.gif");
+    background-position: center; /* Center the image */
+    background-repeat: repeat;
+    background-size: contain;
+
+    display:block;
+    align-items:end;
+ }
+
+
 
 
 
@@ -378,6 +416,12 @@ span.Hostile{color:rgb(231, 72, 72);}
 
 /*--Responsive---*/
 @media screen and (max-width: 768px) {
+
+    .muscontrol{
+        padding:5px;
+    position:absolute;
+    z-index:100;
+    }
 
 /* - Section 2 -*/
 .innerflex{display:block;}
@@ -421,6 +465,13 @@ span.Hostile{color:rgb(231, 72, 72);}
     }
 
 /* - Section 3 -*/
+.gallerytitle{ 
+
+    height:40%;
+    font-size:5vw;}
+
+.innerflex2{display:flex;}
+
 .gallery {
 
     display: block;
@@ -453,6 +504,21 @@ span.Hostile{color:rgb(231, 72, 72);}
     position:absolute;
     height:80%;
     font-size:5vw;}
+
+    #s3chatbox .s3content h2 {
+        font-size:17px;
+        text-transform:uppercase;
+        color:#333;
+        letter-spacing:1px;
+        text-align:left;
+    }
+    
+    #s3chatbox .s3content p {
+        font-size:10px;
+        line-height:1.8em;
+        color:#777;
+        text-align:left;
+    }
     
     
 }

@@ -1,3 +1,4 @@
+
 //---------- Music Button & Audio-----------------------------------
 const button = document.querySelector('sl-button');
 const audio = document.querySelector("audio");
@@ -30,6 +31,8 @@ $(".step").click( function() {
 	$(this).addClass("active").prevAll().addClass("active");
 	$(this).nextAll().removeClass("active");
 });
+
+//changing the progress bar % and Swapping selected Radio button into a small thumbnail of Mega Man
 
 $(".step01").click( function() {
 	$("#line-progress").css("width", "0%");
@@ -78,14 +81,13 @@ $(".step06").click( function() {
 //-------------------------Animations----------------------
 
 //Scroll Elements
-gsap.registerPlugin(ScrollTrigger);
 
-  // scroll element for Timeline Section
+
+  // scroll element for Section 2 (Timeline) W/ Shoelace
   const container = document.querySelector('.timeline');
   const animation = container.querySelector('sl-animation');
   const animation2 = container.querySelector('.scrollanim2');
   const animation3 = container.querySelector('.scrollanim3');
-  const box = animation.querySelector('.TLImg');
 
 
   const observer = new IntersectionObserver(entries => {
@@ -96,8 +98,8 @@ gsap.registerPlugin(ScrollTrigger);
         animation3.play = true;
 
     } else {
-      animation1.play = false;
-      animation1.currentTime = 0;
+      animation.play = false;
+      animation.currentTime = 0;
 
       animation2.play = false;
       animation2.currentTime = 0;
@@ -108,6 +110,39 @@ gsap.registerPlugin(ScrollTrigger);
   });
   observer.observe(container);
 
+  // scroll element for Section 3 (Gallery) w/ GSAP
+  gsap.registerPlugin(ScrollTrigger);
+
+  //Row 1: the upper
+  gsap.to(".lightboximg", {
+    scrollTrigger: {
+      scroller: ".wrapper",
+      trigger: "#s3BG",
+
+      markers:true,
+
+    },
+    y:0,
+    opacity:1 ,
+    scale:1,
+    duration:1
+
+  } );
+  //Row 2: the lower
+  gsap.to(".lightboximg2", {
+    scrollTrigger: {
+      scroller: ".wrapper",
+      trigger: "#s3BG",
+
+      markers:true,
+
+    },
+    y:100,
+    opacity:1 ,
+    scale:1,
+    duration:1
+
+  } );
 
 //Gear Rotation Clockwise
 anime({
@@ -129,10 +164,3 @@ anime({
     duration: 50000,
     loop: true
 })
-
-gsap.to("",{
-    scrollTrigger:"",
-    x: 400,
-    rotation: 300,
-    duration:3
-});

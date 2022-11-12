@@ -35,6 +35,7 @@
     <sl-button variant="default" size="large" circle>
       <sl-icon name="volume-mute" label="Settings"></sl-icon>
     </sl-button>
+
       <!-- Music: 8 Bit Smooth Presentation by David Fesliyan https://www.fesliyanstudios.com/royalty-free-music/downloads-c/8-bit-music/-->
     <!--controls autoplay loop-->
   <audio>
@@ -42,7 +43,7 @@
   </audio>
   </div>
 <!--------------- Section 1: Landing Page--------------->
-   <section class="s1BG">
+   <section id="s1BG">
 
 
 
@@ -137,12 +138,13 @@
 
    </section>
 <!--------------- Section 2: Timeline--------------->
-   <section class="s2BG">
+   <section id="s2BG">
 
       <div class="timeline">
+        <img class="bgchara" src="images/TimelineBG_chara.gif">
         <!-- Image thumbnail for each game-->
       <sl-animation class="scrollanim1" name="backInDown" duration="800" iterations="1">
-        <img class="TLImg" src="images/RM1.jpg" width="30%" alt="Italian Trulli">
+        <img class="TLImg" src="images/RM1.jpg" width="30%" alt="Japanese Box Cover of Mega Man">
       </sl-animation>
 
       <!-- Timeline Created through Radio Button-->
@@ -203,11 +205,16 @@
                 <div>
                   <h2> Dr. Light: </h2>
                   <P>
+
                     The story begins in the year of 20XX where we live in peace and harmony with the Robots I have created.
                     However situation has gone dire when my old time rival, 
-                    <sl-tooltip content="Villain of the Mega Man Series"><span class="Hostile">Dr. Wily</span></sl-tooltip>
-                    , modified 6 friendly robots masters, turning them hostile and causing a ruckus. Thankfully with the help of my trusty 
-                    robot helper,<sl-tooltip content="Protagonist of the Mega Man Series"><span class="Friendly">Mega Man</span></sl-tooltip> we were able to stop <sl-tooltip content="Villain of the Mega Man Series"><span class="Hostile">Dr. Wily</span></sl-tooltip> before it was too late.
+                    <sl-tooltip content="Villain, Long Time Rival of Dr. Light"><span class="Hostile">Dr. Wily</span></sl-tooltip>
+                    , modified 6 friendly Robots Masters, turning them hostile and causing a ruckus. Thankfully with the help of my trusty 
+                    robot helper,
+                    <sl-tooltip content="Protagonist, Dr. Light's Kind Robot Helper"><span class="Friendly">Mega Man</span></sl-tooltip>
+                     we were able to stop 
+                     <sl-tooltip content="Villain, Long Time Rival of Dr. Light"><span class="Hostile">Dr. Wily</span></sl-tooltip>
+                      before it was too late.
                   </P>
                 </div>
                 </div>
@@ -224,8 +231,15 @@
                 <div>
                   <h2> Dr. Light: </h2>
                   <P>
-                    <sl-tooltip content="Villain of the Mega Man Series"><span class="Hostile">Dr. Wily</span></sl-tooltip> returns for revenge after his initial defeat with 8 newly created Robot
-                     masters and an army of robots by his side. It's up to <span class="Friendly">Mega Man</span> again to put an end to <sl-tooltip content="Villain of the Mega Man Series"><span class="Hostile">Dr. Wily</span></sl-tooltip>'s plan.
+                    Stubborn as always, 
+                    <sl-tooltip content="Villain, Long Time Rival of Dr. Light"><span class="Hostile">Dr. Wily</span></sl-tooltip> 
+                    shortly returns for revenge. This time however he had created with 8 brand new Robot
+                    Masters, along with an army of robots, waiting to cause havoc to the world. 
+                    <sl-tooltip content="Protagonist, Dr. Light's Kind Robot Helper"><span class="Friendly">Mega Man</span></sl-tooltip>
+                    volunteered to be modified into a fighting robot again to put an end to 
+                    <sl-tooltip content="Villain, Long Time Rival of Dr. Light"><span class="Hostile">Dr. Wily</span></sl-tooltip>
+                    's plan. With Wily's Fortress crashing down along with his ambition,
+                    the world celebrated in peace once more. 
                   </P>
                 </div>
                 </div>
@@ -242,10 +256,20 @@
                 <div>
               <h2>  Dr. Light: </h2>
               <P>
-                Few months after the events of Mega Man 2, <sl-tooltip content="Villain of the Mega Man Series"><span class="Hostile">Dr. Wily</span></sl-tooltip> seemed to have finally see the error in
+                Few months after the events of Mega Man 2, 
+                <sl-tooltip content="Villain, Long Time Rival of Dr. Light"><span class="Friendly">Dr. Wily</span></sl-tooltip> 
+                seemed to have finally see the error in
                 his ways and volunteered to aid me in the construction of the robot Gamma for peacekeeping,
-                However <sl-tooltip content="Villain of the Mega Man Series"><span class="Hostile">Dr. Wily</span></sl-tooltip> would soon reveal his true colors yet again when he got hold of the energy crystal powering Gamma.
-                It was up to <sl-tooltip content="Protagonist of the Mega Man Series"><span class="Friendly">Mega Man</span></sl-tooltip>  and the newly created companion <sl-tooltip content="Supporting Character of the Mega Man Series"><span class="Friendly">Rush</span></sl-tooltip>  to combat the 8 berserk robot masters and the mysterious <sl-tooltip content="Proto Man in Disguise,Brother and Rival of Mega Man"><span class="Hostile">Break Man</span></sl-tooltip>  to save the world again.
+                However <sl-tooltip content="Villain, Long Time Rival of Dr. Light"><span class="Hostile">Dr. Wily</span></sl-tooltip>
+                 would soon reveal his true colors yet again when he got hold of the energy crystal powering Gamma.
+                It was up to
+                <sl-tooltip content="Protagonist, Dr. Light's Kind Robot Helper"><span class="Friendly">Mega Man</span></sl-tooltip>
+                and the newly created companion 
+                <sl-tooltip content="Supporting Character of the Mega Man Series"><span class="Friendly">
+                Rush</span></sl-tooltip>
+                to combat the 8 berserk robot masters and the mysterious 
+                <sl-tooltip content="Proto Man in Disguise,Brother and Rival of Mega Man"><span class="Hostile">Break Man</span></sl-tooltip>
+                to save the world again.
               </P>
             </div>
           </div>
@@ -263,10 +287,15 @@
               <div>
             <h2>  Dr. Light: </h2>
             <P>
-              One year after the events of Mega Man 3, A mysterious scientist <sl-tooltip content="Villain of the Mega Man Series"><span class="Hostile">Dr. Cossack</span></sl-tooltip> has followed Wily's footsteps and 
-              cause mayham with 8 robot masters he created. With the help of <sl-tooltip content="Protagonist of the Mega Man Series"><span class="Friendly">Mega Man</span></sl-tooltip> and <sl-tooltip content="Supporting Character of the Mega Man Series"><span class="Friendly">Proto Man</span></sl-tooltip>
-              Cossack's robot army was defeated and ultimately revealing Dr. Wily was responsible for the attack, where he kidnapped Dr. Cossack's daughter, threatening him to 
-              begin assault on the world.
+              One year after the events of Mega Man 3, A mysterious scientist 
+              <sl-tooltip content="Villain, Mysterious Russian Scientist"><span class="Hostile">Dr. Cossack</span></sl-tooltip>
+               has followed Wily's footsteps and 
+              cause mayham with 8 robot masters he created. With the help of 
+              <sl-tooltip content="Protagonist, Dr. Light's Kind Robot Helper"><span class="Friendly">Mega Man</span></sl-tooltip> 
+              and 
+              <sl-tooltip content="Supporting Character, Brother of Mega Man"><span class="Friendly">Proto Man</span></sl-tooltip>
+              Cossack's robot army was defeated and ultimately revealing Dr. Wily was responsible for the attack, where he kidnapped 
+              Dr. Cossack's daughter, threatening him to begin assault on the world.
             </P>
           </div>
         </div>
@@ -284,10 +313,20 @@
               <div>
             <h2>  Dr. Light: </h2>
             <P>
-              Two months after the events of Mega Man 4, I was suddenly kidnapped by <sl-tooltip content="Supporting Character of the Mega Man Series"><span class="Hostile">Proto Man</span></sl-tooltip> 
-              , as he constructed a robot army and threatened to take over the world.<sl-tooltip content="Protagonist of the Mega Man Series"><span class="Friendly">Mega Man</span></sl-tooltip> swiftly defeated the 8 Robot Masters and revealed the Proto Man that was causing havoc was actually an imposter
-              created by <sl-tooltip content="Villain of the Mega Man Series"><span class="Hostile"> Dr. Wily.</span></sl-tooltip> In an effort to frame the real <sl-tooltip content="Supporting Character of the Mega Man Series"><span class="Friendly">Proto Man</span></sl-tooltip>. Just as <sl-tooltip content="Protagonist of the Mega Man Series"><span class="Friendly">Mega Man</span></sl-tooltip> was about to be defeated by the imposter,<sl-tooltip content="Supporting Character of the Mega Man Series"><span class="Friendly">Proto Man</span></sl-tooltip> came to rescue
-              and together they have saved me and brought an end to Wily's plan once more.
+              Two months after the events of Mega Man 4, I was abruptly kidnapped by
+               <sl-tooltip content="Antagonist, Purpose and Intentions Unknown"><span class="Hostile">Proto Man</span></sl-tooltip> 
+              , as he constructed a robot army and threatened to take over the world.
+              <sl-tooltip content="Protagonist, Dr. Light's Kind Robot Helper"><span class="Friendly">Mega Man</span></sl-tooltip> 
+              swiftly defeated the 8 Robot Masters and revealed the Proto Man that was causing havoc was actually an imposter
+              created by 
+              <sl-tooltip content="Villain, Long Time Rival of Dr. Light"><span class="Hostile"> Dr. Wily.</span></sl-tooltip> 
+              In an effort to frame the real 
+              <sl-tooltip content="Supporting Character, Brother of Mega Man"><span class="Friendly">Proto Man</span></sl-tooltip>. 
+              Just as 
+              <sl-tooltip content="Protagonist, Dr. Light's Kind Robot Helper"><span class="Friendly">Mega Man</span></sl-tooltip> 
+              was about to be defeated by the imposter,
+              <sl-tooltip content="Supporting Character, Brother of Mega Man"><span class="Friendly">Proto Man</span></sl-tooltip> 
+              came to rescue and together they have saved me and brought an end to Wily's plan once more.
               </P>
           </div>
         </div>
@@ -305,8 +344,16 @@
               <div>
             <h2>  Dr. Light: </h2>
             <P>
-              To Counter <sl-tooltip content="Villain of the Mega Man Series"><span class="Hostile"> Dr. Wily</span></sl-tooltip>'s continuous schemes on taking over the world, the Global Robot Alliance was formed.
-              However, a new threat emerges as the host of the Robot Tournament, Mr.X, reprogrammed 8 of the robot participant in the Tournament and threatens the world yet again. Unsuprisingly, Mr.X was revealed to be none other than <sl-tooltip content="Villain of the Mega Man Series"><span class="Hostile"> Dr. Wily</span></sl-tooltip> himself.
+              To Counter 
+              <sl-tooltip content="Villain, Long Time Rival of Dr. Light"><span class="Hostile"> Dr. Wily</span></sl-tooltip>
+              's continuous schemes on taking over the world, the Global Robot Alliance was formed.
+              However, a new threat emerges as the host of the Robot Tournament, 
+              <sl-tooltip content="Villain, Organizer of the Robot Tournament"><span class="Hostile">Mr.X</span></sl-tooltip>
+              , reprogrammed 8 of the robot participant in the Tournament and threatens the world yet again. Unsuprisingly, 
+              <sl-tooltip content="Villain, Organizer of the Robot Tournament"><span class="Hostile">Mr.X</span></sl-tooltip>
+               was revealed to be none other than 
+               <sl-tooltip content="Villain, Long Time Rival of Dr. Light"><span class="Hostile"> Dr. Wily</span></sl-tooltip>
+                himself.
             
             </P>
           </div>
@@ -324,34 +371,56 @@
 
    </section>
 <!--------------- Section 3: Gallery--------------->
-   <section class="s3BG">
-    <h1 class="gallerytitle">GALLERY</h1>
-
+   <section id="s3BG">
+    <div class="s3items">
+    <h1 class="gallerytitle">._Gallery</h1>
 
   <div class="gallery">
 
-    <a data-fslightbox="gallery" href="images/galleryimg1.png">
+    <!-- Figure.Capcom, Mega Man. 2022, Digital Image. Reproduced from Mega Man Wiki.-->
+    <a data-fslightbox="gallery" class="lightboximg" href="images/galleryimg1.png">
       <sl-tooltip content="Mega Man"> <img src="images/gallerythumb1.png"> </sl-tooltip>
     </a>
-    <a data-fslightbox="gallery" href="images/galleryimg2.png">
-      <sl-tooltip content="Proto Man"><img src="images/gallerythumb2.png"> </sl-tooltip>
-    </a>
-    <a data-fslightbox="gallery" href="images/galleryimg3.png">
+    <!-- Figure.Capcom, Roll. 2022, Digital Image. Reproduced from Mega Man Wiki.-->
+    <a data-fslightbox="gallery" class="lightboximg2" href="images/galleryimg4.png">
+      <sl-tooltip content="Roll"><img src="images/gallerythumb4.png"> </sl-tooltip>
+    </a>    
+
+    <!-- Figure.Capcom, Dr. Light. 2022, Digital Image. Reproduced from Mega Man Wiki.-->
+    <a data-fslightbox="gallery" class="lightboximg" href="images/galleryimg3.png">
       <sl-tooltip content="Dr. Light"><img src="images/gallerythumb3.png"> </sl-tooltip>
     </a>
-    <a data-fslightbox="gallery" href="images/galleryimg4.png">
-      <sl-tooltip content="Roll"><img src="images/gallerythumb4.png"> </sl-tooltip>
+    <!-- Figure.Capcom, Proto Man. 2022, Digital Image. Reproduced from Mega Man Wiki.-->
+    <a data-fslightbox="gallery" class="lightboximg2" href="images/galleryimg2.png">
+      <sl-tooltip content="Proto Man"><img src="images/gallerythumb2.png"> </sl-tooltip>
     </a>
-    <a data-fslightbox="gallery" href="images/galleryimg5.png">
+    <!-- Figure.Capcom, Dr. Wily. 2022, Digital Image. Reproduced from Mega Man Wiki.-->
+    <a data-fslightbox="gallery" class="lightboximg" href="images/galleryimg5.png">
       <sl-tooltip content="Dr. Wily"><img src="images/gallerythumb5.png"> </sl-tooltip>
     </a>
 
   </div>
-    
-    
-    
-    
-    
+  <div id="s3chatbox">
+    <!-- Mega Man 1 Textbox  -->
+    <div class="s3content">
+      <div class="innerflex2">
+      <sl-avatar 
+      style="--size: 8rem; padding:3px;"
+      shape="rounded"
+      image="images/DrLightPort.gif"
+      label="Avatar of a gray tabby kitten looking down"
+      ></sl-avatar>
+      <div>
+        <h2> Dr. Light: </h2>
+        <P>
+          To Learn More about the Characters, You can examine the Image Database I have prepared.
+          
+        </P>
+      </div>
+      </div>
+    </div>
+  </div>
+  </div>
 
   </section>
 
